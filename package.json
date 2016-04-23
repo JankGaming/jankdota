@@ -1,0 +1,27 @@
+{
+  "name": "JankDota",
+  "author": "Michael Barrett",
+  "version": "3.0.0",
+  "private": true,
+  "scripts": {
+    "start": "node app.js",
+    "lint": "eslint ."
+  },
+  "dependencies": {
+    "express": "3.4.0",
+    "grunt": "0.4.5",
+    "grunt-autoprefixer": "1.0.1",
+    "grunt-cli": "1.2.0",
+    "grunt-contrib-clean": "0.6.0",
+    "grunt-contrib-copy": "0.7.0",
+    "grunt-contrib-less": "0.11.4",
+    "grunt-contrib-uglify": "0.6.0",
+    "grunt-contrib-watch": "0.6.1",
+    "grunt-shell": "1.1.1",
+    "jade": "1.11.0",
+    "load-grunt-tasks": "0.6.0"
+  },
+  "devDependencies": {
+    "eslint": "^2.8.0"
+  }
+}

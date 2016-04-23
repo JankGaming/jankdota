@@ -1,0 +1,29 @@
+doctype html
+html
+  head
+    meta(name='viewport', content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no')
+    meta(name="theme-color" content="#590202")
+
+    //- Override this to set a custom page description.
+    block meta
+      meta(name='description', content='All things Dota 2. Home of HeroStats, Jankbot, and unconditional feeding.')
+
+    //- Override this to set a custom page title.
+    block title
+      title= title
+
+    link(rel='stylesheet', href='/style/static/reset.css', type='text/css')
+    link(rel='stylesheet', href='/style/dynamic/scrollPage.css', type='text/css')
+    link(rel='stylesheet' href='http://fonts.googleapis.com/css?family=Roboto+Slab', type='text/css')
+    link(rel='stylesheet' href='http://fonts.googleapis.com/css?family=Lora:400,700,400italic', type='text/css')
+    link(rel='shortcut icon', href='/img/favicon.ico')
+
+    //- Append to this block to include more custom styles.
+    block styles
+
+    script(src='/js/analytics.js')
+
+    //- Append to this block to include more script files.
+    block scripts
+  body
+    block body

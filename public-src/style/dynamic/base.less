@@ -1,0 +1,124 @@
+@import 'defaults';
+
+/*******************************************************************************
+ * MIXINS
+ ******************************************************************************/
+.transition(@duration:0.2s, @ease:linear) {
+  -webkit-transition: all @duration @ease;
+  -moz-transition: all @duration @ease;
+  -o-transition: all @duration @ease;
+  transition: all @duration @ease;
+}
+
+.box-shadow(@arguments) {
+  -webkit-box-shadow: @arguments;
+  -moz-box-shadow: @arguments;
+  box-shadow: @arguments;
+}
+
+/*******************************************************************************
+ * GENERIC STYLES
+ ******************************************************************************/
+html, body {
+  height: 100%;
+  font-family: @sans;
+  font-size: 16px;
+  line-height: 1em;
+
+}
+
+h1 {
+  font-size: 3em;
+  line-height: 1em;
+  font-family: @sans;
+  margin: .2em 0;
+}
+
+h2 {
+  font-size: 2em;
+  line-height: 1em;
+  font-family: @sans;
+  margin: .2em 0;
+}
+
+h3 {
+  font-size: 1.7em;
+  line-height: 1em;
+  font-family: @sans;
+  margin: .2em 0;
+}
+
+h4 {
+  font-size: 1.3em;
+  line-height: 1em;
+  font-family: @sans;
+  margin: .2em 0;
+}
+
+p {
+  margin-top: .5em;
+  margin-bottom: .5em;
+}
+
+small {
+  font-size: .8em;
+}
+
+a {
+  color: @link;
+  transition: color 200ms linear;
+
+  &:hover {
+    color: @linkHover;
+  }
+
+  &:visited {
+    color: @linkVisited
+  }
+}
+
+article {
+  font-size: 1.2em;
+  font-family: @serif;
+  line-height: 1.2em;
+  margin-bottom: 2em;
+  margin-top: 1em;
+
+  p {
+    margin-top: 1em;
+    margin-bottom: 1em;
+  }
+
+  ul {
+    margin-left: 35px;
+    list-style: disc;
+    list-style-type: disc;
+  }
+
+  ol {
+    margin-left: 35px;
+    list-style-type: decimal;
+  }
+
+  h1, h2, h3, h4 {
+    margin: .6em 0;
+  }
+}
+
+.error {
+  height: 2em;
+  width: 100%;
+  margin-bottom: 20px;
+  line-height: 2em;
+  vertical-align: middle;
+  background-color: @warning;
+  padding-left: 5px;
+}
+
+strong {
+  font-weight: bold;
+}
+
+em {
+  font-style: italic;
+}

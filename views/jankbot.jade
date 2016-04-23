@@ -1,0 +1,95 @@
+extends scrollPage
+
+append styles
+  link(rel='stylesheet', href='/style/dynamic/jankbot.css', type='text/css')
+
+block title
+  title Jankbot - Free Open Source Dota 2 Steam Bot
+
+block body
+  header.section
+    .section-content
+      h1 Jankbot
+      p The Free, Open-Source Steam Bot for Dota 2 and Gaming Communities
+  article
+    .section#jankbot
+      .section-content
+        h2 Jankbot 2 Is Here
+        p.description
+          strong Streamlined, Stabilized, Simplified
+        .image-text
+          img(src='/img/jankbot-pic1.png')
+          .text
+            h3 Multi-Functional
+            p.
+              Jankbot ships with useful basic commands for organizing matches among your community.
+              Adding modules to Jankbot can extend his functionality to do just about anything. Save
+              quotes, find scrims, look up hero data, even add your own digital currency. Broadcast
+              messages to your team or guild, and manage inhouses easily through Jankbot.
+        .image-text
+          .text
+            h3 Easy Commands
+            p.
+              All you have to do to use your Jankbot is message him. Jankbot automatically responds to
+              friend requests, and is always ready to help you out. Message Jankbot just like anyone else
+              on your friends list to give him commands.
+          img(src='/img/jankbot-pic2.png')
+        .image-text
+          img(src='/img/jankbot-pic3.png')
+          .text
+            h3 Connected
+            p.
+              Jankbot can connect to popular APIs through modules, delivering data and extra functionality
+              right to your steam chat. Look up hero attributes from HeroStats.io, post to your twitter,
+              and more. Jankbot can leverage any package available for NodeJS to extend his capabilities.
+        .image-text
+          .text
+            h3 Multilingual
+            p.
+              Jankbot is built to speak any language. Defaulting to English, Jankbot can be translated easily
+              to use any other language. Currently, Jankbot ships with English, Portuguese and German translations.
+          img(src='/img/jankbot-pic4.png')
+    .section#herostats-learnmore.cta
+      a(href='https://github.com/twisterghost/jankbot/releases', target='_blank') Download Jankbot
+    .section
+      .section-content
+        h2 Installing & Running
+        p.left.
+          Jankbot is designed to run on Linux and OSX. While it is capable of running on a Windows machine,
+          it requires extra setup and is not fully supported.
+    .section.cta
+      a(href='https://github.com/twisterghost/jankbot/wiki/Installation-&-Setup') Installation Instructions (Linux, OSX, Windows)
+    .section
+      .section-content
+        h2 The Jankbot Module Repository
+        p.description
+          strong.
+            Jankbot modules all in one place
+        p.left.
+          We have compiled a collection of Jankbot modules all into one repository, and are accepting
+          modules built by the community into the repository. Find modules, submit your own, report bugs,
+          request module features and get updates all from one place.
+    .section.cta
+      a(href='https://github.com/JankGaming/jankbot-modules') Visit Jankbot Module Repository
+    .section
+      .section-content
+        h2 Module API 2.0
+        p.left
+          strong.
+            The Jankbot module API has been redesigned from the ground up to provide a simpler, yet comprehensive
+            way for developers to add functionality to Jankbot.
+        p.left.
+          As developers ourselves, we know how important it is for documentation to be simple and clear. The
+          Jankbot Github wiki is full of information on developing modules for Jankbot. Once you have finished
+          your custom module, you can submit a pull request to the <a href='https://github.com/JankGaming/jankbot-modules'>Jankbot Modules Repo</a>
+          to add it to the official module repository.
+    .section.cta
+      a(href='https://github.com/twisterghost/jankbot/wiki/The-Module-API') API Documentation
+
+  footer.section
+    .section-content
+      .footer-links
+        a(href='http://twitter.com/jankdota') Twitter
+        a(href='/info/about') About
+        a(href='/info/contact') Contact
+      p.copy © JankDota.com, 2015. Dota 2 emblem including the JankDota 'twisted' emblem is © Valve Corp. Each and every visitor is deeply and compassionately loved.

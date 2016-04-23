@@ -1,0 +1,42 @@
+extends scrollPage
+
+append styles
+  link(rel='stylesheet', href='/style/dynamic/index.css', type='text/css')
+
+block body
+  header.section
+    .section-content
+      h1 Welcome to JankDota
+      p Home of Jankbot, HeroStats, and Unconditional Feeding
+  article
+    .section#jankbot
+      .section-content
+        h2 Introducing Jankbot 2
+        p.description
+          strong Free, open-source Steam bot for Dota 2 communities
+        a(href='/jankbot')
+          img(src='/img/jankbot-promo.png')
+        p.
+          Jankbot is a completely free steam bot designed to help run gaming communities.
+          Jankbot can help organize games, announce messages, store information, and even
+          host matches through easily added modules. He even speaks multiple languages!
+    .section#jankbot-learnmore.cta
+      a(href='/jankbot') Learn More / Download
+    .section#herostats
+      .section-content
+        h2 HeroStats.io
+        p.description
+          strong Sortable, leveling hero attribute table
+        p.
+          HeroStats.io lets you see how different heroes stack up against each other as they
+          progress through levels. You can sort by any stat, and level up the heroes to see how
+          they change throughout the game.
+    .section#herostats-learnmore.cta
+      a(href='http://herostats.io', target='_blank') Visit HeroStats.io
+  footer.section
+    .section-content
+      .footer-links
+        a(href='http://twitter.com/jankdota') Twitter
+        a(href='/info/about') About
+        a(href='/info/contact') Contact
+      p.copy © JankDota.com, 2015. Dota 2 emblem including the JankDota 'twisted' emblem is © Valve Corp. Each and every visitor is deeply and compassionately loved.

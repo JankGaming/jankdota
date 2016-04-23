@@ -1,0 +1,50 @@
+@import "defaults";
+
+body {
+  width: 100%;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.section {
+  position: relative;
+  padding: 80px 20px;
+
+  .section-content {
+    max-width: 980px;
+    margin: 0 auto;
+    text-align: center;
+
+    h2 {
+      font-size: 65px;
+      line-height: 1.3em;
+      letter-spacing: 2px;
+    }
+
+    @media @phone {
+      h2 {
+        font-size: 45px;
+      }
+    }
+
+    p {
+      font-size: 20px;
+      line-height: 26px;
+    }
+
+    strong {
+      font-weight: bold;
+    }
+  }
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Roboto Slab', sans-serif;
+}
+
+p {
+  font-family: 'Lora', serif;
+}
+

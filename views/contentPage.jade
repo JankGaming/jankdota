@@ -1,0 +1,63 @@
+doctype html
+html
+  head
+    meta(name='viewport', content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no')
+    meta(name="theme-color" content="#590202")
+
+    //- Override this to set a custom page description.
+    block meta
+      meta(name='description', content='All things Dota 2. Home of HeroStats, Jankbot, and unconditional feeding.')
+
+    //- Override this to set a custom page title.
+    block title
+      title= title
+
+    link(rel='stylesheet', href='/style/static/reset.css')
+    link(rel='stylesheet', href='/style/dynamic/main.css')
+    link(rel='stylesheet', href='http://fonts.googleapis.com/css?family=Lato:400,900')
+    link(rel='stylesheet', href='http://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic')
+    link(rel='shortcut icon', href='/img/favicon.ico')
+
+    //- Append to this block to include more custom styles.
+    block styles
+
+    script(src='/js/analytics.js')
+
+    //- Append to this block to include more script files.
+    block scripts
+
+  body
+    div#container
+      nav
+        block navigation
+          h1
+            a(href='/')
+              img(src='/img/jd_site_logo.png')
+          span#mobile-menu
+          ul.main-nav
+            li
+              a(href='/') Home
+            li
+              a(href='/jankbot') Jankbot
+        ul.social-icons
+          li
+            a(href='http://twitter.com/jankdota', target='_blank', alt='twitter')
+              img(src='/img/twitter.png')
+
+      div#content
+        main
+          block content
+
+    footer
+      a(href='/info/about') About
+      |&nbsp;-&nbsp;
+      a(href='/info/contact') Contact
+      |&nbsp;-&nbsp;
+      a(href='http://herostats.io', about='_blank') HeroStats.io
+      |&nbsp;-&nbsp;
+      a(href='/jankbot') Jankbot
+      br
+      p.
+        Content, written and published &copy; JankDota.com, 2014. Dota 2 emblem
+        including the JankDota 'twisted' emblem is &copy; Valve Corp. Each and
+        every visitor is deeply and compassionately loved.
