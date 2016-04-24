@@ -16,7 +16,6 @@ app.set('view engine', 'jade');
 // Set up middleware.
 app.use(express.favicon(path.join(__dirname, 'public/img/favicon.ico')));
 app.use(express.logger('dev'));
-app.use(express.methodOverride());
 
 // Redirect to canonical domain
 app.use(function(req,res,next){
@@ -29,10 +28,7 @@ app.use(function(req,res,next){
   }
 });
 
-app.use(app.router);
 app.use(express.static(path.join(__dirname, 'public')));
-
-app.locals.title = 'JankDota';
 
 app.get('/', (req, res) => {
   res.render('index');
@@ -55,9 +51,8 @@ app.get('/info/contact', (req, res) => {
 });
 
 // 404 page.
-app.use(function(req, res, next) {
+app.get('*', function(req, res) {
   res.status(404).render('errors/404.jade');
-  next();
 });
 
 // Start the server.
